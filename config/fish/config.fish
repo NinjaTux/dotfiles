@@ -8,8 +8,10 @@ alias vimrc "nvim ~/.config/nvim/init.vim"
 
 ## git
 alias g "git"
+alias ga "git add"
 alias gs "git status -s"
 alias gm "git commit -m"
+alias gp "git push"
 
 ## misc shell
 alias l "ls -la"
