@@ -23,8 +23,8 @@ brewsetup () {
 # git
 gitsetup () {
   echo -e "[----] git"
-  ln -s $DOTFILES_ROOT/gitconfig ~/.gitconfig
-  ln -s $DOTFILES_ROOT/gitignore ~/.gitignore
+  ln -s $DOTFILES_ROOT/git/gitconfig ~/.gitconfig
+  ln -s $DOTFILES_ROOT/git/gitignore ~/.gitignore
 }
 
 # fish
