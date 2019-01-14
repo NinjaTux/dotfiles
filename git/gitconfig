@@ -1,7 +1,3 @@
-[user]
-  email = valerio.barrila@gmail.com
-  name = ninjatux
-
 [alias]
   # list aliases
   la = "!git config -l | grep alias | cut -c 7-"

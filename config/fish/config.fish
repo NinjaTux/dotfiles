@@ -42,15 +42,4 @@ alias c "pygmentize -g"
 
 ## misc
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
-set -g fish_user_paths "/usr/local/opt/sqlite/bin" $fish_user_paths
-set -gx LDFLAGS "-L/usr/local/opt/sqlite/lib"
-set -gx CPPFLAGS "-I/usr/local/opt/sqlite/include"
-set -gx PKG_CONFIG_PATH "/usr/local/opt/sqlite/lib/pkgconfig"
-
-## go
-set -gx GOPATH "/Users/ninjatux/workspace/secrethub/go"
-set -gx GOROOT "/usr/local/opt/go/libexec"
-set -gx GOBIN "/Users/ninjatux/workspace/secrethub/go/bin"
-set -g fish_user_paths $GOBIN $fish_user_paths
-# alias sdev "env SECRET_API_REMOTE=http://localhost:8080 $GOPATH/bin/secrethub"
-
+set -g fish_user_paths "/usr/local/bin" $fish_user_paths
