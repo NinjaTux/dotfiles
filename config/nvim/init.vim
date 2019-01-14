@@ -19,9 +19,13 @@ set incsearch
 set hlsearch
 set history=1000
 set cursorline
+set shell=sh
+
+language en_US
 
 " loading vim-plug
 call plug#begin('~/.nvim/plugged')
+
 " loading plugins
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -31,12 +35,23 @@ Plug 'morhetz/gruvbox'
 Plug 'mhinz/vim-signify'
 Plug 'airblade/vim-gitgutter'
 Plug 'hashivim/vim-terraform'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 Plug 'sheerun/vim-polyglot'
+Plug 'jiangmiao/auto-pairs'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 
 " Add plugins to runtimepath
 call plug#end()
+
+" Enable deoplete startup
+let g:deoplete#enable_at_startup = 1
 
 " Disabling swap file
 set noswapfile
@@ -46,7 +61,7 @@ set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 " git-gutter
-let g:gitgutter_sign_column_always = 1
+set signcolumn=yes
 let g:gitgutter_eager = 0
 highlight Comment cterm=italic
 
@@ -66,17 +81,13 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['standard']
 
-" nerdtree + tabs
-nmap <silent> <leader>t :NERDTreeTabsToggle<CR>
-let g:nerdtree_tabs_open_on_console_startup = 1
-
-" deoplete
-let g:deoplete#enable_at_startup = 1
-
-" deoplete + ternjs
-let g:tern_request_timeout = 1
-let g:tern_show_signature_in_pum = '0'
-
 " theme settings
 set background=dark
 colorscheme gruvbox
+
+" Key bindings
+" splits navigation - ctrl + key
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>

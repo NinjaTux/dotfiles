@@ -1,3 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/ninjatux/workspace/dotfiles/config/fish'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/ninjatux/workspace/nlo/services'
+let g:netrw_dirhist_2='/Users/ninjatux/workspace/nlo/services/infrastructure/terraform'
+let g:netrw_dirhist_3='/Users/ninjatux/.config/fisherman/metro'
+let g:netrw_dirhist_4='/Users/ninjatux/workspace/fastify-cli'
+let g:netrw_dirhist_5='/Users/ninjatux/workspace/secrethub/go/src/github.com/keylockerbv/secrethub'
+let g:netrw_dirhist_6='/Users/ninjatux/workspace/secrethub/go/src/github.com/keylockerbv/secrethub/hub'

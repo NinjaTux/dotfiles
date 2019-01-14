@@ -40,6 +40,12 @@ fishsetup () {
   $DOTFILES_ROOT/script/fish.fish
 }
 
+pip () {
+  # udpate all pip versions
+  pip install --upgrade pip
+  pip3 install --upgrade pip
+}
+
 # nvim
 nvimsetup () {
   echo -e "[----] nvim"
@@ -47,6 +53,8 @@ nvimsetup () {
   mkdir -p ~/.config
   # link config
   ln -s $DOTFILES_ROOT/nvim ~/.config/nvim
+  # upgrade
+  pip3 install --upgrade pip
 }
 
 init () {
