@@ -1,86 +1,64 @@
-tap "boltopslabs/software"
-tap "drone/drone"
-tap "heroku/brew"
+tap "caskroom/cask"
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "homebrew/cask-versions"
-tap "homebrew/completions"
+tap "homebrew/cask-fonts"
 tap "homebrew/core"
-tap "homebrew/fuse"
-tap "mashape/kong"
 tap "neovim/neovim"
-brew "android-platform-tools"
-brew "libyaml"
+tap "sambadevi/powerlevel9k"
+# Interpreted, interactive, object-oriented programming language
+brew "python"
+# Automate deployment, configuration, and upgrading
 brew "ansible"
-brew "docbook"
-brew "asciidoc"
-brew "asciinema"
-brew "autoconf"
-brew "automake"
-brew "awscli"
-brew "azure-cli"
-brew "fontconfig"
-brew "gettext"
-brew "libffi"
-brew "pixman"
-brew "emacs"
-brew "cask"
-brew "certbot"
-brew "cmake"
-brew "doxygen"
-brew "elixir"
-brew "fish"
-brew "gdk-pixbuf"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Top-like interface for container metrics
+brew "ctop"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# Distributed revision control system
 brew "git"
+# Small git utilities
 brew "git-extras"
-brew "libgpg-error"
-brew "pinentry"
-brew "gnupg"
+# Open source programming language to build simple/reliable/efficient software
 brew "go"
-brew "libtool"
-brew "graphviz"
+# Colorize logfiles and command output
 brew "grc"
-brew "heroku"
-brew "highlight"
+# Improved top (interactive process viewer)
 brew "htop"
-brew "hub"
-brew "hugo"
-brew "jpegoptim"
-brew "oniguruma"
+# Lightweight and flexible command-line JSON processor
 brew "jq"
-brew "libcroco"
-brew "libevent"
-brew "librsvg"
-brew "libssh2"
-brew "libtermkey"
-brew "libuv"
-brew "libvterm"
-brew "mackup"
-brew "msgpack"
-brew "multimarkdown"
-brew "screenresolution"
+# Tool that can switch between kubectl contexts easily and create aliases
+brew "kubectx"
+# The Kubernetes package manager
+brew "kubernetes-helm"
+# Open source relational database management system
+brew "mysql-client"
+# Fast, highly customisable system info script
 brew "neofetch"
-brew "unibilium"
+# Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-brew "ngrep"
+# Port scanning utility for large networks
 brew "nmap"
-brew "ntfs-3g"
-brew "optipng"
+# Tool for creating identical machine images for multiple platforms
 brew "packer"
-brew "pv"
-brew "ruby-build"
-brew "rbenv"
+# Reattach process (e.g., tmux) to background
 brew "reattach-to-user-namespace"
-brew "rust"
-brew "rustc-completion"
-brew "s3cmd"
-brew "ssh-copy-id"
-brew "telnet"
+# Tool to build, change, and version infrastructure
 brew "terraform"
-brew "terraform-inventory"
-brew "terragrunt"
+# Terminal multiplexer
 brew "tmux"
+# Display directories as trees (with optional color/HTML output)
 brew "tree"
-brew "utf8proc"
+# Internet file retriever
 brew "wget"
-brew "yarn", args: ["without-node"]
+# UNIX shell (command interpreter)
+brew "zsh"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
+cask "font-hack-nerd-font"
+cask "font-meslo-nerd-font-mono"
+cask "font-source-code-pro"
+cask "minikube"
+cask "virtualbox"

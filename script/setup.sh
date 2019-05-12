@@ -7,7 +7,7 @@ DOTFILES_ROOT=$(pwd)
 echo -e "[-] setup"
 
 # brew
-brewsetup () {
+ibrew () {
   echo -e "[----] brew"
   RUBY=`which ruby`
   ## install brew
@@ -20,48 +20,40 @@ brewsetup () {
   brew bundle --global
 }
 
+# oh-my-zsh
+iohmyzsh () {
+  echo -e "[----] oh-my-zsh"
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+}
+
 # git
-gitsetup () {
+igit () {
   echo -e "[----] git"
   ln -s $DOTFILES_ROOT/git/gitconfig ~/.gitconfig
   ln -s $DOTFILES_ROOT/git/gitignore ~/.gitignore
 }
 
-# fish
-fishsetup () {
-  echo -e "[----] fish"
-  # config dir
-  mkdir -p ~/.config
-  # install fisher
-  curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
-  # functios and aliases
-  ln -s $DOTFILES_ROOT/config/fish ~/.config/fish
-  # install fisher plugins
-  $DOTFILES_ROOT/script/fish.fish
-}
-
-pip () {
+ipip () {
   # udpate all pip versions
   pip install --upgrade pip
   pip3 install --upgrade pip
 }
 
 # nvim
-nvimsetup () {
+invim () {
   echo -e "[----] nvim"
   # config dir
   mkdir -p ~/.config
   # link config
   ln -s $DOTFILES_ROOT/nvim ~/.config/nvim
-  # upgrade
-  pip3 install --upgrade pip
 }
 
 init () {
-  gitsetup
-  brewsetup
-  fishsetup
-  nvimsetup
+  igit
+  ibrew
+  invim
+  ipip
+  iohmyzsh
 }
 
 init

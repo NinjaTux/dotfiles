@@ -20,23 +20,25 @@
   # tags
   lasttag = describe --tags --abbrev=0
   lt = describe --tags --abbrev=0
-  # misc
-  cp = cherry-pick
+  # add
+  a = add
+  # status
   st = status -s
-  cl = clone
-  ci = commit
-  co = checkout
-  br = branch
-  diff = diff --word-diff
-  dc = diff --cached
-  # reset
-  r = reset
-  r1 = reset HEAD^
-  r2 = reset HEAD^^
-  rh = reset --hard
-  rh1 = reset HEAD^ --hard
-  rh2 = reset HEAD^^ --hard
+  # commit
+  c = commit
+  # pull
+  pp = pull
+  ppom = pull origin master
+  # push
+  p = push
+  pom = push origin master
   # stash
   sl = stash list
   sa = stash apply
   ss = stash save
+  sc = stash clear
+[user]
+	name = vbarrila
+	email = vbarrila@ebay.com
+[push]
+	default = current
