@@ -28,3 +28,5 @@ jspm_packages
 
 .terraform
 *.retry
+
+resources
