@@ -21,7 +21,7 @@ set history=1000
 set cursorline
 set shell=sh
 
-language en_US
+language en_US.UTF-8
 
 " loading vim-plug
 call plug#begin('~/.nvim/plugged')
