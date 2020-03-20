@@ -21,7 +21,6 @@ HIST_FORMAT="'%Y-%m-%d %T'$(echo -e '\t')"
 alias history="fc -t "$HIST_FORMAT" -il 1"
 
 ## fancy ls
-
 if [[ $platform == 'linux' ]]; then
   alias ll='ls -alh --color=auto'
   alias ls='ls --color=auto'
@@ -38,6 +37,10 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
+
+# git
+alias g="git"
+alias gs="git status -s"
 
 ## docker
 alias dstop='docker stop $(docker ps -aq)'

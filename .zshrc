@@ -42,43 +42,11 @@ fi
 
 source $ZSH/oh-my-zsh.sh
 
-# Aliases & Functions
-## conf
-alias zshconfig="nvim ~/.zshrc"
-alias ohmyzsh="nvim ~/.oh-my-zsh"
-## nvim
-alias vim="nvim"
-## timestamps in history
-HIST_FORMAT="'%Y-%m-%d %T'$(echo -e '\t')"
-alias history="fc -t "$HIST_FORMAT" -il 1"
-## net utils
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ipconfig getifaddr en0"
-alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
-alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
-## ngrock - to expose local ports behind a nat
-alias ngrock_80='ngrock http 80'
-alias ngrock_8080='ngrock http 8080'
-## git stuff
-alias g="git"
-alias git_delete_all_branches="git branch | grep -v \"master\" | xargs git branch -D"
-## docker shells with or without mounted volume
-alias dockershell='docker run --rm -i -t --entrypoint=/bin/bash'
-alias dockershell_sh='docker run --rm -i -t --entrypoint=/bin/sh'
-function dockershell_here() {  
-    dirname=${PWD##*/}
-    docker run --rm -it --entrypoint=/bin/bash -v `pwd`:/${dirname} -w /${dirname} "$@"
-}
-function dockershell_sh_here() {  
-    dirname=${PWD##*/}
-    docker run --rm -it --entrypoint=/bin/sh -v `pwd`:/${dirname} -w /${dirname} "$@"
-}
-
 # source aliases
 [[ ! -f ~/.aliases.zsh ]] || source ~/.aliases.zsh
 
 # source functions
-[[ ! -f ~/.functions.zsh ]] || source ~/.funcs.zsh
+[[ ! -f ~/.functions.zsh ]] || source ~/.functions.zsh
 
 # source prompt
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
