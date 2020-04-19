@@ -35,6 +35,7 @@ brew "neofetch"
 brew "neovim"
 brew "nmap"
 brew "openjdk"
+brew "pulumi"
 brew "screen"
 brew "sqlmap"
 brew "ssh-copy-id", link: true
@@ -50,6 +51,7 @@ brew "unrar"
 brew "watch"
 brew "wget"
 brew "wpscan"
+brew "yarn"
 brew "zsh"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
@@ -66,6 +68,7 @@ cask "font-meslo-nerd-font-mono"
 cask "font-sourcecodepro-nerd-font"
 cask "font-sourcecodepro-nerd-font-mono"
 cask "google-chrome"
+cask "hiddenbar"
 cask "iterm2"
 cask "ivpn"
 cask "java"
@@ -82,6 +85,8 @@ cask "syncthing"
 cask "the-unarchiver"
 cask "transmission"
 cask "tunnelblick"
+cask "virtualbox"
+cask "virtualbox-extension-pack"
 cask "visual-studio-code"
 cask "zoomus"
 mas "Numbers", id: 409203825
@@ -89,3 +94,4 @@ mas "Pages", id: 409201541
 mas "Spark", id: 1176895641
 mas "Speedtest", id: 1153157709
 mas "Trello", id: 1278508951
+mas "Xcode", id: 497799835
