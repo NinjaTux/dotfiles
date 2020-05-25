@@ -1,14 +1,5 @@
 #!/usr/bin/env zsh
 
-# Get operating system
-platform='unknown'
-unamestr=$(uname)
-if [[ $unamestr == 'Linux' ]]; then
-  platform='linux' # arch
-elif [[ $unamestr == 'Darwin' ]]; then
-  platform='darwin'
-fi
-
 ## misc
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
@@ -20,16 +11,9 @@ alias vim="nvim"
 HIST_FORMAT="'%Y-%m-%d %T'$(echo -e '\t')"
 alias history="fc -t "$HIST_FORMAT" -il 1"
 
-## fancy ls
-if [[ $platform == 'linux' ]]; then
-  alias ll='ls -alh --color=auto'
-  alias ls='ls --color=auto'
-elif [[ $platform == 'darwin' ]]; then
-  alias ll='ls -alGh'
-  alias ls='ls -Gh'
-fi
-
-# show me files matching "ls grep"
+## ls
+alias ll='ls -alGh'
+alias ls='ls -Gh'
 alias lsg='ll | grep'
 
 ## net utils
@@ -41,6 +25,18 @@ alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'
 # git
 alias g="git"
 alias gs="git status -s"
+function git_delete_merged() {
+  echo "[#] Listing all branches except master"
+  git for-each-ref --format '%(refname:short)' refs/heads | grep -v master
+  ans=$(ask_yes_or_no "[#] Do you want to delete those branches locally? [y/n] - ")
+  if [[ "yes" == "$ans" ]] then
+    echo "[#] Deleting..."
+    git for-each-ref --format '%(refname:short)' refs/heads | grep -v master | xargs git branch -D
+    echo "[#] Deleted"
+  else
+    echo "[#] Skipped"
+  fi
+}
 
 ## docker
 alias dstop='docker stop $(docker ps -aq)'
@@ -52,6 +48,14 @@ function dockershell_here() {
 }
 function dockershell_sh_here() {  
     dirname=${PWD##*/}
-    docker run --rm -it --entrypoint=/bin/sh -v `pwd`:/${dirname} -w /${dirname} "$@"
+    docker run --rm -it --entrypoint=/bin/sh -v `pwd`:/${dirname} -w /${diirname} "$@"
 }
 
+## util functions
+function ask_yes_or_no() {
+  read "yn?$1"
+  if [[ "$yn" =~ ^[Yy]$ ]]
+  then
+    echo "yes"
+  fi
+}

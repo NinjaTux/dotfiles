@@ -1,18 +1,10 @@
-# Get operating system
-platform='unknown'
-unamestr=$(uname)
-if [[ $unamestr == 'Linux' ]]; then
-  platform='linux' # arch
-elif [[ $unamestr == 'Darwin' ]]; then
-  platform='darwin'
-fi
-
 # conf powerline10k
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-source $HOME/.exports.zsh
+# source aliases
+[[ ! -f ~/.config/shell/exports.zsh ]] || source ~/.config/shell/exports.zsh
 
 # Fix tilix
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
@@ -23,9 +15,12 @@ fi
 ZSH_THEME=powerlevel10k/powerlevel10k
 plugins=(
   aws
+  brew
   docker
+  fzf-zsh
   git
   git-extras
+  kubectl
   nvm
   z
   zsh-autosuggestions
@@ -34,19 +29,14 @@ plugins=(
 
 autoload -U compinit && compinit
 
-if [[ $platform == 'linux' ]]; then
-  plugins=(archlinux "$plugins[@]")
-elif [[ $platform == 'darwin' ]]; then
-  plugins=(brew "$plugins[@]")
-fi
-
 source $ZSH/oh-my-zsh.sh
+source <(kubectl completion zsh)
 
 # source aliases
-[[ ! -f ~/.aliases.zsh ]] || source ~/.aliases.zsh
-
-# source functions
-[[ ! -f ~/.functions.zsh ]] || source ~/.functions.zsh
+[[ ! -f ~/.config/shell/aliases.zsh ]] || source ~/.config/shell/aliases.zsh
 
 # source prompt
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.config/shell/p10k.zsh ]] || source ~/.config/shell/p10k.zsh
+
+# https://github.com/junegunn/fzf
+[[ -f ~/.config/shell/fzf.zsh ]] && source ~/.config/shell/fzf.zsh

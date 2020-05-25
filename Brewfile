@@ -14,6 +14,7 @@ brew "coreutils"
 brew "crunch"
 brew "ctop"
 brew "curl"
+brew "diff-so-fancy"
 brew "exploitdb"
 brew "fzf"
 brew "git"
@@ -95,3 +96,6 @@ mas "Spark", id: 1176895641
 mas "Speedtest", id: 1153157709
 mas "Trello", id: 1278508951
 mas "Xcode", id: 497799835
+mas "Fantastical - Calendar & Tasks", id: 97593718
+mas "stts", id: 1187772509
+mas "Notability", id: 736189492

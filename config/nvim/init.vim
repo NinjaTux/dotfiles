@@ -20,6 +20,8 @@ set hlsearch
 set history=1000
 set cursorline
 set shell=sh
+set number relativenumber
+set nu rnu
 
 language en_US.UTF-8
 
