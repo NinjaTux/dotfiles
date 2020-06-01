@@ -21,6 +21,8 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
+alias wifioff="networksetup -setairportpower en0 off"
+alias wifion="networksetup -setairportpower en0 on"
 
 # git
 alias g="git"
@@ -37,6 +39,11 @@ function git_delete_merged() {
     echo "[#] Skipped"
   fi
 }
+
+## terraform
+alias tf="terraform"
+alias tff="tf fmt"
+alias tfv="tf validate"
 
 ## docker
 alias dstop='docker stop $(docker ps -aq)'
