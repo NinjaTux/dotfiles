@@ -40,3 +40,6 @@ source <(kubectl completion zsh)
 
 # https://github.com/junegunn/fzf
 [[ -f ~/.config/shell/fzf.zsh ]] && source ~/.config/shell/fzf.zsh
+
+# asdf-vm
+. $(brew --prefix asdf)/asdf.sh

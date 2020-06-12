@@ -58,6 +58,9 @@ function dockershell_sh_here() {
     docker run --rm -it --entrypoint=/bin/sh -v `pwd`:/${dirname} -w /${diirname} "$@"
 }
 
+## youtube-dl
+alias ydlbf="youtube-dl -f bestvideo+bestaudio"
+
 ## util functions
 function ask_yes_or_no() {
   read "yn?$1"
