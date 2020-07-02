@@ -115,7 +115,6 @@ cask "visual-studio-code"
 cask "vlc"
 cask "whatsapp"
 cask "zoomus"
-mas "Fantastical", id: 975937182
 mas "Notability", id: 736189492
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
