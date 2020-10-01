@@ -18,7 +18,8 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # PATH
-export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/local/opt/openjdk/bin:$PATH
+export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 
 # oh-my-zsh
 export ZSH=$HOME/.oh-my-zsh

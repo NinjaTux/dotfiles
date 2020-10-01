@@ -1,3 +1,6 @@
+[user]
+	name = Valerio Barrila
+	email = valerio.barrila@gmail.com
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [color]
@@ -17,9 +20,12 @@
 [diff-so-fancy]
 	stripLeadingSymbols = false
 [diff "sopsdiffer"]
-  textconv = sops -d
-
-[includeIf "gitdir:~/workspace/nf/wh-projects/onprem/"]
+	textconv = sops -d
+[http]
+	sslVerify = false
+[pull]
+	rebase = false
+[includeIf "gitdir:~/workspace/nearform/william-hill/onprem/"]
     path = ~/.gitconfig_wh_gitlab_nonprod
-[includeIf "gitdir:~/workspace/nf/wh-projects/gitlab/"]
+[includeIf "gitdir:~/workspace/nearform/william-hill/gitlab/"]
     path = ~/.gitconfig_wh_gitlab_com

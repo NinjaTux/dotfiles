@@ -3,13 +3,11 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# source aliases
+# source exports
 [[ ! -f ~/.config/shell/exports.zsh ]] || source ~/.config/shell/exports.zsh
 
-# Fix tilix
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-	source /etc/profile.d/vte.sh
-fi
+# eksctl completion
+fpath=($fpath ~/.config/shell/completion_eksctl)
 
 # oh-my-zsh
 ZSH_THEME=powerlevel10k/powerlevel10k
@@ -17,11 +15,10 @@ plugins=(
   aws
   brew
   docker
-  fzf-zsh
   git
   git-extras
   kubectl
-  nvm
+  zsh-nvm
   z
   zsh-autosuggestions
   zsh-completions

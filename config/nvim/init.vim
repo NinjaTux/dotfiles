@@ -26,7 +26,7 @@ set nu rnu
 language en_US.UTF-8
 
 " loading vim-plug
-call plug#begin('~/.nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 " loading plugins
 Plug 'vim-airline/vim-airline'

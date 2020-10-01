@@ -9,3 +9,7 @@ A lot of this is copy pasted from different sources, some of them are:
 Additional tools:
 
 - https://github.com/chris1111/Wireless-USB-Adapter
+
+ToDo:
+
+- create step by step updated setup guide, like https://github.com/sb2nov/mac-setup/
