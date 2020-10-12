@@ -30,3 +30,4 @@ jspm_packages
 *.retry
 
 resources
+config/nvim/plugged/*
