@@ -4,7 +4,7 @@ Desktop.ini
 Thumbs.db
 .Spotlight-V100
 .Trashes
-
+config/nvim/.netrwhist
 logs
 *.log
 npm-debug.log*

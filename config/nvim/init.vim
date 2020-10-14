@@ -9,6 +9,7 @@ call plug#begin()
   Plug 'junegunn/vim-easy-align'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
+  Plug 'hashivim/vim-terraform'
   Plug 'mengelbrecht/lightline-bufferline'
   Plug 'lifepillar/vim-gruvbox8'
   Plug 'neoclide/coc.nvim', {'branch': 'release'} " run :CocInstall coc-json coc-tsserver
@@ -59,6 +60,9 @@ set cursorline
 set hidden
 set cmdheight=1
 set laststatus=2
+
+let g:terraform_align=1
+let g:terraform_fmt_on_save=1
 
 let g:gruvbox_transp_bg = 1
 let g:gruvbox_italicize_strings = 0
