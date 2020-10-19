@@ -14,5 +14,5 @@ A lot of this is copy-pasted from different sources, some of them are:
 4. `brew bundle --file=/tmp/Brewfile`
 5. `alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'`
 6. `dotfiles checkout`
-7. `dotfile submodule update --init --recursive`
+7. `dotfiles submodule update --init --recursive`
 8. `nvim +'PlugInstall' +qa --headless`
