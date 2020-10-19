@@ -10,6 +10,9 @@ A lot of this is copy-pasted from different sources, some of them are:
 
 1. install [brew](https://brew.sh)
 2. `git clone --bare https://github.com/ninjatux/dotfiles.git $HOME/.dotfiles`
-3. `brew bundle --file=$HOME/.dotfile/brew/Brewfile`
-4. `alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'`
-5. `dotfiles checkout`
+3. `curl https://raw.githubusercontent.com/ninjatux/dotfiles/master/.config/brew/Brewfile --output /tmp/Brewfile`
+4. `brew bundle --file=/tmp/Brewfile`
+5. `alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'`
+6. `dotfiles checkout`
+7. `dotfile submodule update --init --recursive`
+8. `nvim +'PlugInstall' +qa --headless`
