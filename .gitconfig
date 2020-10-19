@@ -1,3 +1,6 @@
+[user]
+	name = Valerio Barrila
+	email = valerio.barrila@gmail.com
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [color]
@@ -22,3 +25,7 @@
 	sslVerify = false
 [pull]
 	rebase = false
+[includeIf "gitdir:~/workspace/nearform/william-hill/onprem/"]
+    path = ~/.gitconfig_wh_gitlab_nonprod
+[includeIf "gitdir:~/workspace/nearform/william-hill/gitlab/"]
+    path = ~/.gitconfig_wh_gitlab_com
