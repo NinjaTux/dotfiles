@@ -5,6 +5,7 @@ A lot of this is copy-pasted from different sources, some of them are:
 - https://github.com/mathiasbynens/dotfiles
 - https://github.com/jwoudenberg/old-dotfiles/
 - https://wiki.archlinux.org/index.php/Bash/Functions
+- https://github.com/candreslobor/dotfiles
 
 ## Install
 
@@ -16,3 +17,14 @@ A lot of this is copy-pasted from different sources, some of them are:
 6. `dotfiles checkout`
 7. `dotfiles submodule update --init --recursive`
 8. `nvim +'PlugInstall' +qa --headless`
+
+## Usage
+
+```
+dotfiles status
+dotfiles add .vimrc
+dotfiles commit -m "Add vimrc"
+dotfiles add .bashrc
+dotfiles commit -m "Add bashrc"
+dotfiles push
+```

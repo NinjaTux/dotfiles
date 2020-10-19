@@ -1,5 +1,3 @@
-if [ "$TMUX" = "" ]; then tmux; fi
-
 source $HOME/.config/zsh/exports
 # oh-my-zsh plugins and config
 plugins=(
