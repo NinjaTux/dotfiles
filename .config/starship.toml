@@ -1,0 +1,29 @@
+format = """
+$username\
+$hostname\
+$kubernetes\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$docker_context\
+$package\
+$golang\
+$helm\
+$nodejs\
+$python\
+$ruby\
+$terraform\
+$nix_shell\
+$memory_usage\
+$env_var\
+$cmd_duration\
+$custom\
+$line_break\
+$time\
+$status\
+$character"""
+
+[aws]
+disabled = false

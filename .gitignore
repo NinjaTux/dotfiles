@@ -31,3 +31,4 @@ jspm_packages
 
 resources
 config/nvim/plugged/*
+zshrc.temp

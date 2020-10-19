@@ -6,7 +6,6 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
-tap "weaveworks/tap"
 brew "ack"
 brew "python@3.8"
 brew "ansible"
@@ -87,9 +86,7 @@ brew "yq"
 brew "zsh"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
-brew "weaveworks/tap/eksctl"
 cask "1password"
-cask "alacritty"
 cask "alfred3"
 cask "appcleaner"
 cask "balenaetcher"
@@ -142,17 +139,11 @@ cask "vlc"
 cask "webpquicklook"
 cask "zoomus"
 mas "1Password 7", id: 1333542190
-mas "AdBlock", id: 1402042596
-mas "Airmail", id: 918858936
-mas "GarageBand", id: 682658836
-mas "Grammarly for Safari", id: 1462114288
-mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Notability", id: 736189492
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pocket", id: 568494494
-mas "Save to Pocket", id: 1477385213
 mas "Speedtest", id: 1153157709
 mas "stts", id: 1187772509
 mas "Trello", id: 1278508951
