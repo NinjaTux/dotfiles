@@ -7,16 +7,7 @@ $git_branch\
 $git_commit\
 $git_state\
 $git_status\
-$docker_context\
 $package\
-$golang\
-$helm\
-$nodejs\
-$python\
-$ruby\
-$terraform\
-$nix_shell\
-$memory_usage\
 $env_var\
 $cmd_duration\
 $custom\
