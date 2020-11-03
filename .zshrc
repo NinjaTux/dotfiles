@@ -10,6 +10,7 @@ plugins=(
   kubectl
   zsh-nvm
   zsh-autosuggestions
+  history-substring-search
   zsh-completions
 )
 
@@ -26,7 +27,3 @@ source <(stern --completion=zsh)
 
 # aliases
 source $HOME/.config/zsh/aliases
-
-# Use Starship Prompt
-# https://github.com/starship/starship'
-eval "$(starship init zsh)"
