@@ -16,9 +16,7 @@ plugins=(
   git-extras
   kubectl
   zsh-nvm
-  zsh-autosuggestions
   history-substring-search
-  zsh-completions
 )
 
 autoload -U compinit && compinit
@@ -34,6 +32,10 @@ source <(stern --completion=zsh)
 
 # aliases
 source $HOME/.config/zsh/aliases
+
+# add zsh external plugins
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # To customize prompt, run `p10k configure` or edit .config/zsh/.p10k.zsh.
 [[ ! -f .config/zsh/.p10k.zsh ]] || source .config/zsh/.p10k.zsh
