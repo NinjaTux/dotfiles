@@ -30,8 +30,8 @@ export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/local/opt/openjdk/bin:
 
 # tools
 export ZSH=$HOME/.oh-my-zsh
-export WGETRC=".config/wget/wgetrc"
-export CURL_HOME=".config/curl"
+export WGETRC=$HOME/.config/wget/wgetrc
+export CURL_HOME=$HOME/.config/curl
 
 # golang
 export GOPATH=$HOME/workspace/go
