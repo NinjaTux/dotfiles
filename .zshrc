@@ -10,6 +10,7 @@ source $HOME/.config/zsh/exports
 plugins=(
   aws
   brew
+  direnv
   docker
   gcloud
   git
