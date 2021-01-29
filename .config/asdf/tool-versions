@@ -1,3 +1,4 @@
 terraform 0.13.5
 terragrunt 0.25.4
 tfsec 0.36.0
+tflint 0.23.0

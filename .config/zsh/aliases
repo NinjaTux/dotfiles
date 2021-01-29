@@ -72,7 +72,8 @@ function dockershell_sh_here() {
 }
 
 ## youtube-dl
-alias ydlbf="youtube-dl -f bestvideo+bestaudio"
+alias ydlv="youtube-dl -f bestvideo+bestaudio"
+alias ydla="youtube-dl --extract-audio --audio-format mp3"
 
 # utils functions
 function ask_yes_or_no() {
