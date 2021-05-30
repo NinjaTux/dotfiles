@@ -1,4 +1,14 @@
-terraform 0.13.5
+terraform 0.14.5
 terragrunt 0.25.4
 tfsec 0.36.0
 tflint 0.23.0
+helm 3.5.1
+yarn 1.22.10
+helmfile v0.139.6
+sops 3.6.1
+minikube 1.20.0
+jq jq-1.6
+yq v4.9.3
+awscli 2.2.7
+bat 0.18.1
+direnv 2.28.0

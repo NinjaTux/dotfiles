@@ -43,6 +43,10 @@ source "$HOME/.cargo/env"
 # zsh-syntax-highlighting
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
 
+# k8s
+## krew - kubectl plugin manager
+export PATH="${PATH}:${HOME}/.krew/bin"
+
 # theme
 ZSH_THEME="powerlevel10k/powerlevel10k"
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(history)
