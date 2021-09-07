@@ -52,11 +52,11 @@ function git_delete_merged() {
 
 ## terraform
 alias tf="terraform"
-alias tff="tf fmt"
+alias tfmt="tf fmt"
 alias tfv="tf validate"
 
 ## terragrunt
-alias terragrunt_delete="find . -type d -name ".terragrunt-cache" -prune -exec rm -rf {} \;"
+alias terragrunt-delete="find . -type d -name ".terragrunt-cache" -prune -exec rm -rf {} \;"
 
 ## docker
 alias dstop='docker stop $(docker ps -aq)'
