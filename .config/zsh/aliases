@@ -50,13 +50,19 @@ function git_delete_merged() {
   fi
 }
 
+## k8s
+alias kctx="kubectx"
+alias kns="kubens"
+
 ## terraform
 alias tf="terraform"
 alias tfmt="tf fmt"
 alias tfv="tf validate"
 
 ## terragrunt
-alias terragrunt-delete="find . -type d -name ".terragrunt-cache" -prune -exec rm -rf {} \;"
+alias tgp="terragrunt plan"
+alias tga="terragrunt apply"
+alias tgd="find . -type d -name ".terragrunt-cache" -prune -exec rm -rf {} \;"
 
 ## docker
 alias dstop='docker stop $(docker ps -aq)'

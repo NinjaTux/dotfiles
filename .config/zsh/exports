@@ -53,3 +53,6 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(history)
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root line)
 ZSH_HIGHLIGHT_PATTERNS=('rm -rf *' 'fg=white,bold,bg=red')
+
+## aws autocompleter
+export PATH=/Users/ninjatux/.asdf/shims/aws_completer:$PATH
