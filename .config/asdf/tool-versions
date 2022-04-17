@@ -1,6 +1,5 @@
 awscli 2.2.7
 azure-cli 2.35.0
-bat 0.18.1
 helm 3.5.1
 helmfile 0.142.0
 jq jq-1.6

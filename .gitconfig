@@ -25,5 +25,3 @@
 	sslVerify = false
 [pull]
     rebase = false
-[includeIf "gitdir:~/workspace/nearform/william-hill/"]
-    path = ~/.gitconfig_wh_gitlab_com
