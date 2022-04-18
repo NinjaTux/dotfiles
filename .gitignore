@@ -62,3 +62,7 @@ Public/
 .vscode/
 .CFUserTextEncoding
 .dotfiles
+.docker/
+.kube/
+.kuberlr/
+.terraform.d/

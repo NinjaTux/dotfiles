@@ -38,3 +38,4 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH="/usr/local/opt/libpq/bin:$PATH"
 export PATH="/usr/local/opt/binutils/bin:$PATH"
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
