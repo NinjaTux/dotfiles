@@ -66,3 +66,16 @@ Public/
 .kube/
 .kuberlr/
 .terraform.d/
+Applications/
+workspace/
+var/
+go/
+Google\ Drive
+My\ Drive/
+.gitconfig_wh
+.wget-hsts
+.redhat/
+.rd/
+.aws/
+.aws-okta-processor/
+.Trash/

@@ -1,0 +1,116 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Prompt
+# Which is equivalent to
+format = """
+$username\
+$hostname\
+$localip\
+$kubernetes\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$docker_context\
+$package\
+$container\
+$golang\
+$helm\
+$nodejs\
+$pulumi\
+$purescript\
+$python\
+$terraform\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$env_var\
+$custom\
+$sudo\
+$cmd_duration\
+$line_break\
+$jobs\
+$status\
+$shell\
+$character"""
+
+[aws]
+disabled = false
+force_display = true
+[battery]
+disabled = true
+[buf]
+disabled = true
+[c]
+disabled = true
+[cmake]
+disabled = true
+[cobol]
+disabled = true
+[conda]
+disabled = true
+[crystal]
+disabled = true
+[dart]
+disabled = true
+[deno]
+disabled = true
+[dotnet]
+disabled = true
+[elixir]
+disabled = true
+[elm]
+disabled = true
+[erlang]
+disabled = true
+[gcloud]
+disabled = true
+[haskell]
+disabled = true
+[java]
+disabled = true
+[julia]
+disabled = true
+[kotlin]
+disabled = true
+[kubernetes]
+disabled = false
+[lua]
+disabled = false
+[nim]
+disabled = false
+[nix_shell]
+disabled = false
+[ocaml]
+disabled = false
+[openstack]
+disabled = true
+[perl]
+disabled = true
+[spack]
+disabled = true
+[status]
+disabled = false
+[sudo]
+disabled = false
+[swift]
+disabled = true
+[shlvl]
+disabled = true
+[singularity]
+disabled = true
+[vagrant]
+disabled = true
+[vlang]
+disabled = true
+[vcsh]
+disabled = true
+[zig]
+disabled = true

@@ -24,4 +24,6 @@
 [http]
 	sslVerify = false
 [pull]
-    rebase = false
+	rebase = false
+[includeIf "gitdir:~/workspace/williamhillplc/"]
+	path = ~/.gitconfig_wh
