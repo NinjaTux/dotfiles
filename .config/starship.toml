@@ -71,7 +71,7 @@ disabled = true
 [erlang]
 disabled = true
 [gcloud]
-disabled = true
+disabled = false
 [haskell]
 disabled = true
 [java]

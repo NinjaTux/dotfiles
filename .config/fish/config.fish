@@ -31,6 +31,10 @@ set COMPOSE_DOCKER_CLI_BUILD 0
 set GOPATH $HOME/go
 set GOBIN $HOME/go/bin
 
+# unset
+set -e AWS_PROFILE
+kubectx -u
+
 # aliases
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias k="kubectl"
