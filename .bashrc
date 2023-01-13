@@ -1,1 +1,0 @@
-/Users/ninjatux/.config/bash/bashrc

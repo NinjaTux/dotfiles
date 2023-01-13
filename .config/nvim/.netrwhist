@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
-let g:netrw_dirhist_4='/Users/ninjatux/.config/nvim/plugged/vim-gruvbox8'
-let g:netrw_dirhist_3='/Users/ninjatux/workspace/nearform/william-hill/unity/platform/kiwi/helm/charts/kiwi'
-let g:netrw_dirhist_2='/Users/ninjatux/workspace/nearform/william-hill/unity/platform/kiwi/helm/charts'
-let g:netrw_dirhist_1='/Users/ninjatux/workspace/nearform/william-hill/unity/platform/kiwi/helm'
